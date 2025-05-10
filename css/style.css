@@ -38,6 +38,7 @@
 .nav__menu {
   display: flex;
   flex: 0 1 50%;
+  flex-wrap: wrap;
   list-style: none;
 }
 .nav__menu li{
@@ -119,6 +120,7 @@ background-color: #34547A;
 .projects__body {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 49px;
   padding: 100px 0;
 }
@@ -163,6 +165,7 @@ background-color: #34547A;
   width: 100px;
   height: 100px;
   z-index: 2;
+  
 }
 .work__play-btn:hover{
   cursor: pointer;
