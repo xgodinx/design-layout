@@ -147,6 +147,7 @@
 }
 .work__content {
   position: relative;
+  /* background:url(/img/play-button.svg) 50% / 100px 100px no-repeat,url(/img/Rectangle-5.png) center / cover no-repeat; */
 }
 .work__video{
   max-width: 1100px;
@@ -165,7 +166,6 @@
   width: 100px;
   height: 100px;
   z-index: 2;
-  
 }
 .work__play-btn:hover{
   cursor: pointer;
