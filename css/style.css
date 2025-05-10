@@ -164,6 +164,9 @@ background-color: #34547A;
   height: 100px;
   z-index: 2;
 }
+.work__play-btn:hover{
+  cursor: pointer;
+}
 /* ---------------------footer---------------------------------- */
 
 .copyrights__body {
