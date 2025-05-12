@@ -133,8 +133,6 @@
   padding: 100px 0 100px 0;
   background-color: #EEEFF1;
 }
-.container {
-}
 .work__body {
   display: flex;
   flex-direction: column;
@@ -167,6 +165,7 @@
   height: 100px;
   z-index: 2;
 }
+
 .work__play-btn:hover{
   cursor: pointer;
 }
