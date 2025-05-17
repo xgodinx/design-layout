@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500);
+@import "variables";
+@import "mixins";
+@import "layout";
+
+body{
+  font-family: $main-font;
+}
+%title {
+  color: $main-color;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 20px 0;
+
+  @media (min-width: 767px){
+    margin-bottom: 40px;
+   }
+
+  @media (min-width: 1080px){
+    margin-bottom: 50px;
+   } 
+}
+%text {
+  max-width: 540px;
+  color: #727272;
+  font-size: 16px;
+  line-height: 164%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+%cta{
+  line-height: 45px;
+  padding: 0 41px;
+  background-color: $secondary-bgc;
+  color: $secondary-color;
+  font-size: 16px;
+  letter-spacing: 10%;
+  align-self: flex-start;
+
+   @media (min-width: 767px){
+    line-height: 60px;
+   }
+}
+
+.design {
+  padding: 0px 0px 22px;
+
+    @media (min-width: 767px){
+      padding: 0 0 80px;
+    }
+    @media (min-width: 767px){
+      padding: 0 0 141px;
+    }
+
+		&__layout {
+      background-color: $main-bgc;
+		}
+
+		&__body {
+      @include flex-column;
+      align-items: flex-start;
+		}
+
+		&__title {
+      @extend %title;
+      font-size: 32px;
+      text-align: left;
+      margin-bottom: 25px;
+
+      @media (min-width: 767px){
+        font-size: 42px;
+        margin-bottom: 40px;
+      }
+      @media (min-width: 1080px){
+        font-size: 48px;
+        margin-bottom: 60px;
+      }
+		}
+
+		&__text {
+      @extend %text;
+      text-align: left;
+
+      @media (min-width: 767px){
+        margin-bottom: 50px;
+      }
+      @media (min-width: 1080px){
+        margin-bottom: 65px;
+      }
+		}
+
+		&__button {
+      @extend %cta;
+		}
+}
+.nav {  
+	&__menu {
+    @include flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    li{
+      font-size: 16px;
+      line-height: 164%;
+      letter-spacing: 10%;
+      color: $main-color;
+      &:not(:last-child){
+        padding: 0 10px 0 0;
+      }
+    }
+    li a{
+      color: #34547A;
+    }
+    
+    @media (min-width: 580px){
+      justify-content: space-between;
+      padding-top: 20px;
+      max-width: 50%;
+      flex-wrap: nowrap;
+      padding-bottom: 80px;
+      li:not(:last-child){
+        padding: 0 40px 0 0;
+      }
+    }
+    @media (min-width: 767px){
+      padding-top: 50px;
+      padding-bottom: 120px;
+      li:not(:last-child){
+      padding: 0 40px 0 0;
+      }
+    }
+    @media (min-width: 1080px){
+      padding-top: 79px;
+      padding-bottom: 162px;
+      li:not(:last-child){
+      padding: 0 45px 0 0;
+      }
+    }
+  }
+}
+
+.about {
+
+		&__body {
+      @include flex-column;
+      align-items: center;
+      padding: 30px 0px 22px;
+      @media (min-width: 767px){
+        padding: 85px 0 80px;
+      }
+      @media (min-width: 767px){
+        padding: 112px 0 100px;
+      }
+		}
+
+		&__title {
+      @extend %title;
+		}
+
+		&__text {
+      @extend %text;
+		}
+}
+
+.projects {
+  background-color: $secondary-bgc;
+		&__body {
+      @include flex;
+      padding: 50px 0;
+      gap: 29px;
+      @media (min-width: 767px){
+        padding: 75px 0;
+      }
+      @media (min-width: 1080px){
+        padding: 100px 0;
+      }
+		}
+		&__item {
+      padding: 0 8px;
+		}
+}
+
+
+.work {
+		&__body {
+      @include flex-column;
+      align-items: center;
+      padding: 30px 0px 30px;
+      @media(min-width: 767px){
+        padding: 60px 0 60px;
+      }
+      @media(min-width: 767px){
+        padding: 100px 0 100px;
+      }
+		}
+
+		&__title {
+      @extend %title;
+		}
+
+		&__text {
+      @extend %text;
+      margin-bottom: 37px;
+		}
+
+		&__content {
+      width: 100%;
+      max-width: 1100px;
+      position: relative;
+		}
+
+		&__video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+		}
+
+		&__play-btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 2;
+      width: 50px;
+      height: 50px;
+      margin-left: -25px;
+      margin-top: -25px;
+		}
+}
+
+.copyrights {
+  background-color: $secondary-bgc;
+
+		&__body {
+      @include flex-column;
+      align-items: flex-start;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 0px;
+      gap: 10px 0;
+      color: $secondary-color;
+		}
+
+		&__title {
+      font-weight: 500;
+      font-size: 16px;
+      @media (min-width: 767px){
+        font-size: 21px;
+      }
+		}
+
+		&__text {
+      font-size: 13px;
+		}
+}
+
+
+
+/*# sourceMappingURL=style.scss.map */
+
+
