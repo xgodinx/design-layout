@@ -67,7 +67,7 @@ body {
     padding: 0 0 80px;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 1080px) {
   .design {
     padding: 0 0 141px;
   }
