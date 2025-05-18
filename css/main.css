@@ -229,9 +229,7 @@ body {
   position: relative;
 }
 .work__video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  max-width: 100%;
 }
 .work__play-btn {
   position: absolute;
